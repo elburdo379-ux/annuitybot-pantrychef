@@ -1,13 +1,7 @@
 from flask import Flask, request, render_template
 import random
-import json
 
 app = Flask(__name__)
-
-# Mock database (in memory)
-db = {
-    "client123": {"contract_value": 50000, "payment_status": "Active"}
-}
 
 # Home page
 @app.route("/")
